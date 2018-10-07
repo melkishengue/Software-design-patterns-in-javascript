@@ -4,7 +4,7 @@ export default class Circle extends Observer {
   constructor() {
     super();
     this.color = 'gold';
-    this.canvas = document.getElementById('circle_canvas');
+    this.canvas = document.querySelector('#circle_canvas');
     this.context = this.canvas.getContext("2d");
   }
 

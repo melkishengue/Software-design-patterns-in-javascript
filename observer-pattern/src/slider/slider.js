@@ -6,8 +6,8 @@ import Subject from '../observer/subject.interface';
 export default class Slider extends Subject {
   constructor() {
     super();
-    this.slider = document.getElementById("slider");
-    this.output = document.getElementById("output");
+    this.slider = document.querySelector("#slider");
+    this.output = document.querySelector("#output");
   }
 
   init() {

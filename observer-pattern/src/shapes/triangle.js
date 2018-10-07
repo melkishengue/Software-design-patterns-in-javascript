@@ -4,7 +4,7 @@ export default class Triangle extends Observer {
   constructor() {
     super();
     this.color = 'purple';
-    this.canvas = document.getElementById('triangle_canvas');
+    this.canvas = document.querySelector('#triangle_canvas');
     this.context = this.canvas.getContext("2d");
   }
 

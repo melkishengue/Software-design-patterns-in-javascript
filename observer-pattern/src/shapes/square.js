@@ -4,7 +4,7 @@ export default class Square extends Observer {
   constructor() {
     super();
     this.color = '#0FED34';
-    this.canvas = document.getElementById('square_canvas');
+    this.canvas = document.querySelector('#square_canvas');
     this.context = this.canvas.getContext("2d");
   }
 
