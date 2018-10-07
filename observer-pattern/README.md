@@ -11,4 +11,13 @@ This repo presents an implementation of the observer pattern in javascript. We h
 npm run build
 ```
 
+- install project dependencies
+
+```
+npm run install
+```
+
 - then open dist/index.html in your favorite browser
+```
+open dist/index.html
+```
