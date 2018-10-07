@@ -25,7 +25,6 @@ export default class Slider extends Subject {
     this.notify({distance: 35});
 
     // notify observers (each time you drag the slider)
-    let $this = this;
     this.slider.oninput = () => {
       // notify all observers about the change
       this.notify({distance: this.slider.value});
