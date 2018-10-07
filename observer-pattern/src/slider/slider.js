@@ -24,10 +24,9 @@ export default class Slider extends Subject {
     this.attach(triangle);
     this.notify({distance: 35});
 
-    // Update the current slider value (each time you drag the slider handle)
+    // notify observers (each time you drag the slider)
     let $this = this;
     this.slider.oninput = function() {
-      $this.output.innerHTML = this.value;
       // notify all observers about the change
       $this.notify({distance: this.value});
     }
