@@ -10,7 +10,6 @@ This repo presents an implementation of the observer pattern in javascript. We h
 ```
 npm run install
 npm run build
-
 ```
 
 - open dist/index.html
