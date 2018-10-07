@@ -16,3 +16,5 @@ npm run build
 ```
 open dist/index.html
 ```
+
+![screenshot](./screenshot.png)
