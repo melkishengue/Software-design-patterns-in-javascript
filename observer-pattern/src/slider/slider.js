@@ -32,7 +32,7 @@ export default class Slider extends Subject {
       $this.notify({distance: this.value});
     }
 
-    this.output.innerHTML = this.slider.value; // Display the default slider value
+    this.output.innerHTML = this.slider.value;
   }
 
   notify(payload) {
