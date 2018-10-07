@@ -1,6 +1,6 @@
-import Square from '../displays/square';
-import Circle from '../displays/circle';
-import Triangle from '../displays/triangle';
+import Square from '../shapes/square';
+import Circle from '../shapes/circle';
+import Triangle from '../shapes/triangle';
 import Subject from '../observer/subject.interface';
 
 export default class Slider extends Subject {
