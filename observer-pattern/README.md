@@ -5,19 +5,15 @@ This repo presents an implementation of the observer pattern in javascript. We h
 ## Run the project
 
 - clone this repo
-- in the root folder run:
-
-```
-npm run build
-```
-
-- install project dependencies
+- install project dependencies and build project
 
 ```
 npm run install
+npm run build
+
 ```
 
-- then open dist/index.html in your favorite browser
+- open dist/index.html
 ```
 open dist/index.html
 ```
