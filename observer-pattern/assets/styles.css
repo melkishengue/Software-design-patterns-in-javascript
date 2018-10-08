@@ -2,6 +2,8 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #404040;
+  font-size: 0.8em;
 }
 
 .wrapper {
@@ -49,5 +51,4 @@ canvas {
 
 p {
   width: 65%;
-  font-size: 0.9em;
 }

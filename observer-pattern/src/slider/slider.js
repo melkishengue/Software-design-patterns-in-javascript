@@ -6,11 +6,10 @@ import Subject from '../observer/subject.interface';
 export default class Slider extends Subject {
   constructor() {
     super();
+
     this.slider = document.querySelector("#slider");
     this.output = document.querySelector("#output");
-  }
 
-  init() {
     // an observer
     let square = new Square();
     // an observer
@@ -28,6 +27,7 @@ export default class Slider extends Subject {
     this.slider.oninput = () => {
       // notify all observers about the change
       this.notify({distance: this.slider.value});
+      this.output.innerHTML = this.slider.value;
     }
 
     this.output.innerHTML = this.slider.value;
@@ -36,7 +36,7 @@ export default class Slider extends Subject {
   notify(payload) {
     this.observers.forEach((observer) => {
       observer.update(payload);
-    })
+    });
   }
 
   attach(observer) {
