@@ -1,18 +1,18 @@
-import MethodNotOverriden from '../error/methodNotOverriden';
+import MethodNotOverridenException from '../error/methodNotOverridenException';
 
 export default class Observer {
   constructor() {
   }
 
   update() {
-    throw new MethodNotOverriden('Abstract method. Please override this method');
+    throw new MethodNotOverridenException('Abstract method. Please override this method');
   }
 
   clear() {
-    throw new MethodNotOverriden('Abstract method. Please override this method');
+    throw new MethodNotOverridenException('Abstract method. Please override this method');
   }
 
   draw() {
-    throw new MethodNotOverriden('Abstract method. Please override this method');
+    throw new MethodNotOverridenException('Abstract method. Please override this method');
   }
 }

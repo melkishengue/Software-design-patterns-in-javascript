@@ -1,4 +1,4 @@
-import MethodNotOverriden from '../error/methodNotOverriden';
+import MethodNotOverridenException from '../error/methodNotOverridenException';
 
 export default class Subject {
   constructor() {
@@ -6,14 +6,14 @@ export default class Subject {
   }
 
   attach(observer) {
-    throw new MethodNotOverriden('Abstract method. Please override this method');
+    throw new MethodNotOverridenException('Abstract method. Please override this method');
   }
 
   detach(observer) {
-    throw new MethodNotOverriden('Abstract method. Please override this method');
+    throw new MethodNotOverridenException('Abstract method. Please override this method');
   }
 
   notify() {
-    throw new MethodNotOverriden('Abstract method. Please override this method');
+    throw new MethodNotOverridenException('Abstract method. Please override this method');
   }
 }
