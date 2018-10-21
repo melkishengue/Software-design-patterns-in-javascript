@@ -1,11 +1,8 @@
-import Observer from '../observer/observer.interface';
+import IShape from '../shapes/IShape';
 
-export default class Circle extends Observer {
-  constructor() {
-    super();
-    this.color = 'gold';
-    this.canvas = document.querySelector('#circle_canvas');
-    this.context = this.canvas.getContext("2d");
+export default class Circle extends IShape {
+  constructor({selector, color}) {
+    super({selector, color});
   }
 
   // called by the subject
@@ -13,11 +10,6 @@ export default class Circle extends Observer {
     this.radius = parseInt(payload.distance);
     this.clear();
     this.draw();
-  }
-
-  // clear the canvas
-  clear() {
-    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
   // draw a circle

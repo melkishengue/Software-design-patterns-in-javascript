@@ -5,15 +5,17 @@ export default class Subject {
     this.observers = [];
   }
 
+  notify(payload) {
+    this.observers.forEach((observer) => {
+      observer.update(payload);
+    });
+  }
+
   attach(observer) {
-    throw new MethodNotOverridenException('Abstract method. Please override this method');
+    this.observers.push(observer);
   }
 
   detach(observer) {
-    throw new MethodNotOverridenException('Abstract method. Please override this method');
-  }
-
-  notify() {
-    throw new MethodNotOverridenException('Abstract method. Please override this method');
+    this.observers.splice(this.observers.indexOf(observer), 1);
   }
 }

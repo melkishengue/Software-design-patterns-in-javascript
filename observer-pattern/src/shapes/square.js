@@ -1,11 +1,8 @@
-import Observer from '../observer/observer.interface';
+import IShape from '../shapes/IShape';
 
-export default class Square extends Observer {
-  constructor() {
-    super();
-    this.color = '#0FED34';
-    this.canvas = document.querySelector('#square_canvas');
-    this.context = this.canvas.getContext("2d");
+export default class Square extends IShape {
+  constructor({selector, color}) {
+    super({selector, color});
   }
 
   // called by the subject
@@ -13,11 +10,6 @@ export default class Square extends Observer {
     this.width = parseInt(payload.distance);
     this.clear();
     this.draw();
-  }
-
-  // clear the canvas
-  clear() {
-    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
   }
 
   // draw a square
