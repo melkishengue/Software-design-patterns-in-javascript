@@ -1,4 +1,4 @@
-import MethodNotOverridenException from '../error/methodNotOverridenException';
+import { MethodNotOverridenException } from '../error/';
 
 export default class Subject {
   constructor() {

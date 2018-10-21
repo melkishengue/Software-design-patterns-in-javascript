@@ -1,9 +1,7 @@
 import Slider from './slider/slider';
 import styles from '../assets/styles.css';
 
-import Square from './shapes/square';
-import Circle from './shapes/circle';
-import Triangle from './shapes/triangle';
+import { Square, Circle, Triangle } from './shapes/';
 
 // wait page load
 document.addEventListener("DOMContentLoaded", function(event) {

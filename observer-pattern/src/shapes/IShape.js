@@ -1,5 +1,4 @@
-import MethodNotOverridenException from '../error/MethodNotOverridenException';
-import DOMElementNotFound from '../error/DOMElementNotFound';
+import { DOMElementNotFound, MethodNotOverridenException } from '../error/';
 import Observer from '../observer/observer.interface';
 
 export default class IShape extends Observer {
