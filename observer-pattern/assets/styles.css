@@ -4,6 +4,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #404040;
   font-size: 0.8em;
+  background-color: aliceblue;
+  text-align: center;
+  padding-top: 10%;
 }
 
 .wrapper {
@@ -51,4 +54,7 @@ canvas {
 
 p {
   width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }

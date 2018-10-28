@@ -1,8 +1,8 @@
 import MethodNotOverridenException from './methodNotOverridenException';
-import DOMElementNotFound from './DOMElementNotFound';
+import DOMElementNotFoundException from './DOMElementNotFoundException';
 
 
 export {
-  DOMElementNotFound,
+  DOMElementNotFoundException,
   MethodNotOverridenException
 }

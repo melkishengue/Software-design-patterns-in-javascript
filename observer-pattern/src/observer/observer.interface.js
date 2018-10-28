@@ -4,6 +4,6 @@ export default class Observer {
   constructor() {}
 
   update() {
-    throw new MethodNotOverridenException('Abstract method. Please override this method');
+    throw new MethodNotOverridenException();
   }
 }
