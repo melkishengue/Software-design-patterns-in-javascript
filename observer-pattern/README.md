@@ -1,6 +1,6 @@
 ## Observer pattern in javascript
 
-This repo presents an implementation of the observer pattern in javascript. We have a subject (the slider) that manages data and observers (the triangle, circle and square) that subscribes to changes on this data.
+This repo presents an implementation of the observer pattern in javascript. We have a subject (the slider) that manages data and observers (the triangle, circle and square) that subscribe to changes on this data.
 
 ## Run the project
 
