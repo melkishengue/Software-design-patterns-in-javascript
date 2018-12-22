@@ -8,7 +8,7 @@ This repo presents an implementation of the observer pattern in javascript. We h
 - install project dependencies and build project
 
 ```
-npm run install
+npm install
 npm run build
 ```
 
